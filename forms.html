@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Contact Me</title>
+</head>
+
+<body>
+  <h1>Contact Form</h1>
+  <h2>Course Notes</h2>
+  <p>
+    Yeah, so pretty much. This form won't do much without Javascript. We can at least structure it and have the form submission data sent to an email address for now.
+  </p>
+  <dl>
+    <dt>input</dt>
+    <dd>type of field</dd>
+    <dt>name</dt>
+    <dd>adds label to sent form submission data</dd>
+    <dt>enctype</dt><dd>sets the encoding for the form data</dd>
+  </dl>
+  <form action="mailto:qntmkrw@gmail.com" method="post" enctype="text/plain">
+    <!-- enctype is setting encoding type to plain, so you don't get '%20' included in your data -->
+    <label>Your name:</label>
+    <!-- name adds label to sent form data -->
+    <input type="text" name="YourName" value="">
+    <input type="color" name="" value=""><br />
+    <label>Your email:</label>
+    <input type="email" name="YourEmail" value="">
+    <hr />
+    <label>Sliding scale:</label>
+    <input type="range" name="" value="" min="0" max="10"><br />
+    <textarea cols="50" rows="5"></textarea><br />
+    <input type="submit" name="">
+  </form>
+</body>
+
+</html>
